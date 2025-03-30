@@ -1,0 +1,355 @@
+.app-container {
+  height: 100%;
+}
+
+.nav-logo {
+  height: 50px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.login-hero {
+  align-self: center;
+  text-align: right;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100px;
+  margin-right: 50px;
+}
+
+.login-line {
+  border: 1px solid rgb(165, 165, 165);
+  height: 40%;
+}
+
+.login-form-container {
+  padding: 5%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-section {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-section > input {
+  font-size: 25px;
+}
+
+button {
+  font-size: 25px;
+  background-color: rgba(255, 223, 65, 0.867);
+  box-shadow: none;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.form-section > * {
+  margin: 10px 5px;
+}
+
+button:hover {
+  background-color: rgba(255, 201, 25, 0.821);
+}
+
+.submit-section > button {
+  margin: 10px;
+}
+
+.form-error {
+  font-size: 18px;
+  position: absolute; 
+  color: black;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 10px; 
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px; 
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 30px;
+  background-color: beige;
+  border-radius: 10px;
+  padding: 10px 5px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+}
+
+.user-profile-photo {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(234, 234, 234);
+  font-size: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.user-profile-welcome {
+  font-size: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-10px, 0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-10px, 10px);
+  }
+}
+
+.profile-menu {
+  background-color: rgb(233, 233, 233);
+  position: absolute;
+  transform: translate(-10px, 10px);
+  padding: 14px;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.profile-menu > button {
+  font-size: 18px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;  
+}
+
+.user-name {
+  margin: 0px 10px;
+}
+
+.navbar-banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 40px;
+}
+
+.portal-name {
+  margin-left: 40px;
+}
+
+.customer-portal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.business-portal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.product-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.product-search > * {
+  font-size: 16px;
+  margin: 0px 10px;
+}
+
+.product-search > input {
+  padding: 5px;
+  width: 75%;
+}
+
+.product-display {
+  width: 70%;
+  height: 65%;
+  background-color: rgb(235, 234, 233);
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.customer-portal-heading {
+  margin-top: 50px;
+  width: 65%;
+}
+
+.customer-sidebar {
+  position: fixed;
+  left: -140px;
+  transition: left 0.5s;
+  padding: 10px 20px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: rgb(235, 234, 233);
+  border-radius: 10px;
+  overflow:visible;
+}
+
+.customer-sidebar-handle {
+  position: absolute;
+  right: -20px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 248, 225);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.customer-sidebar:hover {
+  left: 0px;
+  transition: left 0.5s;
+}
+
+.customer-sidebar > button {
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: beige;
+  font-size: 14px;
+}
+
+.customer-sidebar > button:hover {
+  background-color: rgb(255, 223, 65);
+}
+
+.product-card {
+  height: 110px;
+  width: 100px;
+  font-size: 12px;
+  background-color: beige;
+  border-radius: 15px;
+  padding: 5px;
+  padding-bottom: 10px;
+  margin: 15px;
+  border: 1px solid rgb(252, 241, 184);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card.bigger {
+  height: 120px;
+  width: 120px;
+}
+
+.product-card:hover {
+  background-color: rgb(252, 241, 184);
+  transform: scale(1.05);
+}
+
+.product-carousel {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+}
+
+.portal-container {
+  width: 70%;
+  height: 65%;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.portal-graphs {
+  padding: 20px;
+  padding-top:10px;
+  width: 30%;
+  background-color: rgb(235, 234, 233);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-size: 13px;
+  margin: 0 10px;
+  overflow-y: scroll;
+}
+
+.portal-chat {
+  padding: 30px;
+  padding-top: 20px;
+  width: 70%;
+  background-color: rgb(235, 234, 233);
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.pie-chart {
+  margin: 10px;
+}
+
+.insight-item {
+  margin: 10px;
+  font-size: 14px;
+  background-color: rgb(251, 246, 211);
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.api-error {
+  font-size: 18px;
+  color: black;
+  background-color: rgba(255, 0, 0, 0.1);
+  padding: 30px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px; 
+  text-align: center;
+}
+
+.api-error-text {
+  font-size: 18px;
+  color: red;
+}
